@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Al Arkan</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <script>
+    window.COMPANY_NAME = "Alarkan";
+    window.COMPANY_ADDRESS = "Somwewhere is the universe";
+  </script>
+
+  <!-- Basic page needs
+    ============================================ -->
+  <title>Al Arkan - Autoparts</title>
+  <meta charset="utf-8">
+
+  <meta name="robots" content="index, follow" />
+  <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+
+  <!-- Mobile specific metas
+    ============================================ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Favicon
+    ============================================ -->
+  <link rel="shortcut icon" type="image/png" href="image/Untitled design (28).png" />
+
+
+  <!-- Libs CSS
+    ============================================ -->
+  <link rel="stylesheet" href="/alarkan/css/bootstrap/css/bootstrap.min.css">
+  <link href="/alarkan/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/alarkan/js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+  <link href="/alarkan/js/owl-carousel/owl.carousel.css" rel="stylesheet">
+  <link href="/alarkan/css/themecss/lib.css" rel="stylesheet">
+  <link href="/alarkan/js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+  <link href="/alarkan/js/minicolors/miniColors.css" rel="stylesheet">
+
+  <link href="/alarkan/js/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+  <link href="pe-icon-7-stroke/css/helper.css" rel="stylesheet">
+
+  <!-- Theme CSS
+    ============================================ -->
+  <link href="/alarkan/css/themecss/so_searchpro.css" rel="stylesheet">
+  <link href="/alarkan/css/themecss/so_megamenu.css" rel="stylesheet">
+  <link href="/alarkan/css/themecss/so_advanced_search.css" rel="stylesheet">
+  <link href="/alarkan/css/themecss/so-listing-tabs.css" rel="stylesheet">
+  <link href="/alarkan/css/themecss/so-categories.css" rel="stylesheet">
+  <link href="/alarkan/css/themecss/so-newletter-popup.css" rel="stylesheet">
+  <link href="/alarkan/css/themecss/so-latest-blog.css" rel="stylesheet">
+
+  <link href="/alarkan/css/footer/footer5.css" rel="stylesheet">
+  <link href="/alarkan/css/footer/footer7.css" rel="stylesheet">
+
+  <link href="/alarkan/css/header/header5.css" rel="stylesheet">
+  <link id="color_scheme" href="/alarkan/css/home5.css" rel="stylesheet">
+  <link id="color_scheme" href="/alarkan/css/home7.css" rel="stylesheet">
+
+  <link href="/alarkan/css/responsive.css" rel="stylesheet">
+
+  <!-- Google web fonts
+    ============================================ -->
+  <link href='https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" charset="UTF-8"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+  <style type="text/css">
+    body {
+      font-family: 'Rubik', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .typeheader-5 .container-megamenu.horizontal ul.megamenu>li.with-sub-menu>a::after {
+      color: black;
+    }
+
+    .container-megamenu.horizontal ul.megamenu>li>a {
+      color: white;
+    }
+
+    .typefooter-8 .socials li a:hover,
+    .typefooter-7 .socials li a:hover,
+    .typefooter-8 .row-dark,
+    .typefooter-7 .row-dark {
+      background-color: black;
+    }
+
+    .block-services .icon-service .icon i,
+    .typeheader-5 .telephone i,
+    .typeheader-5 .top-log i,
+    .typeheader-5 .top-log li a:hover,
+    .typeheader-5 ul.top-link>li .btn-group .btn-link:hover,
+    .typeheader-5 ul.top-link>li>a:hover,
+    .common-home .typeheader-5 .container-megamenu.horizontal ul.megamenu>li.home>a,
+    .typeheader-5 .search-header-w .ico-search,
+    .typeheader-5 .container-megamenu.horizontal ul.megamenu>li:hover>a,
+    .typeheader-5 .container-megamenu.horizontal ul.megamenu>li>a:hover,
+    .layout-5.common-home #content .module .pre_text {}
+
+    .typeheader-5 .shopping_cart,
+    .typeheader-5 #sosearchpro .search button,
+    .layout-5.common-home #content .so_advanced_search .sas_inner-box-search .search-button button,
+    .custom-cates .item .lnk a {}
+
+    .typefooter-5 .box-footer .modcontent ul.menu li a,
+    .typefooter-5 .box-infos {
+      color: white !important;
+    }
+
+    .slider-brands {
+      padding-top: 20px;
+    }
+
+    .typeheader-5 .shopping_cart .btn-shopping-cart .top_cart {
+      /*width: 100%;*/
+      /*text-align: center;*/
+    }
+
+    .text-shopping-cart {
+      color: white;
+    }
+
+    .icon-c {
+      font-size: 30px;
+      color: white;
+      text-align: center;
+    }
+
+    .shopcart {
+      text-align: center;
+    }
+
+    .row-brands {
+      padding: 0px 0px;
+    }
+
+    .row-banners {
+      margin-bottom: -9px;
+    }
+
+    .home7-video .box-video {
+      height: 420px;
+      width: 100%;
+    }
+
+    .slider-brands .contentslider .item {
+      padding: 0px 35px;
+    }
+
+    #portal {
+      background: url('image/Car Ring Red Pictures Alarkan.png') no-repeat center;
+      background-size: cover;
+      margin: 0px 0px;
+      width: 100%;
+      height: 80vh;
+      display: flex;
+      align-items: flex-end;
+      padding: 0px 0px;
+      /*background-attachment: fixed;*/
+    }
+
+    p {
+      margin-right: -50px
+    }
+
+    .megamenu-style-dev .navbar-default .horizontal .navbar-toggle .icon-bar {
+      background: white;
+      width: 30px;
+      height: 3px;
+    }
+
+    @media only screen and (max-width: 800px) {
+      #portal {
+        padding: 0px 0px;
+
+      }
+
+      .home7-video .box-video {
+        margin-left: 0%;
+      }
+
+      p {
+        margin-right: 0px
+      }
+    }
+
+    .typefooter-5 .footer-bottom {
+      padding: 5px;
+    }
+
+    .typefooter-5 .footer-middle {
+      padding: 0px;
+      padding-top: 20px;
+    }
+
+    .typefooter-5 .box-infos .list-icon li {
+      margin-bottom: 14px;
+    }
+
+    .typefooter-5 .row-bottom {
+      padding: 15px 0;
+    }
+
+    .typefooter-5 .socials li a {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+    }
+
+    .typefooter-5 .row-bottom:before {
+      opacity: .8;
+    }
+
+    .typefooter-6 .row-bottom:before,
+    .typefooter-5 .row-bottom:before {
+      background-color: black;
+    }
+
+    /*.slider-brands .owl2-nav{*/
+    /*    display:none;*/
+    /*}*/
+    /* Slider */
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+      /*height: 150px;*/
+    }
+
+    .slick-slider {
+      position: relative;
+      display: block;
+      box-sizing: border-box;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-touch-callout: none;
+      -khtml-user-select: none;
+      -ms-touch-action: pan-y;
+      touch-action: pan-y;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .slick-list {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    .slick-list:focus {
+      outline: none;
+    }
+
+    .slick-list.dragging {
+      cursor: pointer;
+      cursor: hand;
+    }
+
+    .slick-slider .slick-track,
+    .slick-slider .slick-list {
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    .slick-track {
+      position: relative;
+      top: 0;
+      left: 0;
+      display: block;
+    }
+
+    .slick-track:before,
+    .slick-track:after {
+      display: table;
+      content: '';
+    }
+
+    .slick-track:after {
+      clear: both;
+    }
+
+    .slick-loading .slick-track {
+      visibility: hidden;
+    }
+
+    .slick-slide {
+      display: none;
+      float: left;
+      height: 100%;
+      min-height: 1px;
+    }
+
+    [dir='rtl'] .slick-slide {
+      float: right;
+    }
+
+    .slick-slide img {
+      display: block;
+    }
+
+    .slick-slide.slick-loading img {
+      display: none;
+    }
+
+    .slick-slide.dragging img {
+      pointer-events: none;
+    }
+
+    .slick-initialized .slick-slide {
+      display: block;
+    }
+
+    .slick-loading .slick-slide {
+      visibility: hidden;
+    }
+
+    .slick-vertical .slick-slide {
+      display: block;
+      height: auto;
+      border: 1px solid transparent;
+    }
+
+    .slick-arrow.slick-hidden {
+      display: none;
+    }
+
+    .footer_menu a:hover {
+      color: red !important;
+    }
+
+    .carousel-control.right {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, 0) 100%) !important;
+    }
+
+    .carousel-control {
+      width: 5% !important;
+      color: red !important;
+    }
+  </style>
+
+
+</head>
+
+<body class="common-home res layout-5">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+  <!-- Include Libs & Plugins
+      ============================================ -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="/alarkan/js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="/alarkan/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/alarkan/js/owl-carousel/owl.carousel.js"></script>
+  <script type="text/javascript" src="/alarkan/js/slick-slider/slick.js"></script>
+  <script type="text/javascript" src="/alarkan/js/themejs/libs.js"></script>
+  <script type="text/javascript" src="/alarkan/js/unveil/jquery.unveil.js"></script>
+  <script type="text/javascript" src="/alarkan/js/countdown/jquery.countdown.min.js"></script>
+  <script type="text/javascript" src="/alarkan/js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
+  <script type="text/javascript" src="/alarkan/js/datetimepicker/moment.js"></script>
+  <script type="text/javascript" src="/alarkan/js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="/alarkan/js/jquery-ui/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="/alarkan/js/modernizr/modernizr-2.6.2.min.js"></script>
+  <script type="text/javascript" src="/alarkan/js/minicolors/jquery.miniColors.min.js"></script>
+
+  <script type="text/javascript" src="/alarkan/js/lightslider/lightslider.js"></script>
+
+  <!-- Theme files
+      ============================================ -->
+
+  <script type="text/javascript" src="/alarkan/js/themejs/application.js"></script>
+
+  <script type="text/javascript" src="/alarkan/js/themejs/homepage.js"></script>
+
+  <script type="text/javascript" src="/alarkan/js/themejs/toppanel.js"></script>
+  <script type="text/javascript" src="/alarkan/js/themejs/so_megamenu.js"></script>
+  <script type="text/javascript" src="/alarkan/js/themejs/addtocart.js"></script>
+
+  <!-- <script type="text/javascript" src="/alarkan/js/themejs/cpanel.js"></script> -->
+
+
+  <script type="text/javascript">
+
+    // var slideIndex = 0;
+
+    // function showSlides() {
+    //   var i;
+    //   var slides = document.getElementsByClassName("mySlides");
+    //   for (i = 0; i < slides.length; i++) {
+    //     slides[i].style.display = "none";
+    //   }
+    //   slideIndex++;
+    //   if (slideIndex > slides.length) { slideIndex = 1 }
+    //   slides[slideIndex - 1].style.display = "block";
+    //   setTimeout(showSlides, 5000); // Change image every 2 seconds
+    // }
+
+    // showSlides();
+
+    $(document).ready(function () {
+      $('.customer-logos').slick({
+        slidesToShow: 9,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 6
+          }
+        }, {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 4
+          }
+        }]
+      });
+    });
+  </script>
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/60edca14d6e7610a49ab18dc/1fagdqpd5';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+</body>
+
+</html>

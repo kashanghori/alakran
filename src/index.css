@@ -1,0 +1,157 @@
+html,
+body,
+#root {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (max-width: 960px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-text {
+    margin-right: 0px !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .home7-video .box-video {
+    margin-left: 0%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #header {
+    height: auto !important;
+  }
+}
+
+.whats-app {
+  display: flex !important;
+  align-items: center;
+}
+
+.whatsapp_float {
+  display: flex !important;
+  align-items: center;
+}
+
+.whatsapp_float .whatsapp-icon {
+  font-size: 32px;
+  color: #00e676;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+#portal {
+  background: url("assets/search-car.png") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: baseline;
+}
+
+#portal-search {
+  background: #000;
+  background-size: cover;
+  margin: 0px 0px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: baseline;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-white.active {
+  color: #ff2d37;
+}
+
+.btn-group .btn-link,
+.dropdown-menu > li > a {
+  font-weight: bold;
+  text-transform: capitalize;
+  padding-bottom: 0px !important;
+}
+
+.btn-group .btn-link,
+.dropdown-menu > li > a img {
+  margin-right: 5px;
+}
+
+.car-slider {
+  height: 92px;
+  overflow: hidden;
+}
+
+.car-slider .slick-slide img {
+  height: 92px;
+  width: 92px;
+}
+
+header .dropdown-menu {
+  padding: 10px 10px !important;
+  display: flex !important;
+  flex-direction: column;
+}
+
+.open.btn-group .btn-link,
+.dropdown-menu > li > a {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.open.btn-group .btn-link,
+.dropdown-menu > li > a > img {
+  margin-right: 5px;
+  height: 10px;
+  width: 11px;
+}
+
+.search-table table th {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.search-table table tbody tr td {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.search-table table tbody {
+  background: #fff;
+}
+
+.balance-page label,
+.balance-page input {
+  color: #fff !important;
+}
+
+.max-days fieldset {
+  background-color: #fff;
+}
+
+.balance-page fieldset {
+  border-color: #fff !important;
+}
+
+.tabs-by {
+  justify-content: initial !important;
+}
+
+#header {
+  height: 130px;
+}
+
+body {
+  background-color: #333333 !important;
+}

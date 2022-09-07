@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic page needs
+    ============================================ -->
+    <title>Al Arkan - Autoparts</title>
+    <meta charset="utf-8">
+
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <!-- Mobile specific metas
+    ============================================ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Favicon
+    ============================================ -->
+    <link rel="shortcut icon" type="image/png" href="image/Untitled design (28).png" />
+
+
+    <!-- Libs CSS
+    ============================================ -->
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="css/themecss/lib.css" rel="stylesheet">
+    <link href="js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+    <link href="js/minicolors/miniColors.css" rel="stylesheet">
+
+    <link href="js/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+    <link href="pe-icon-7-stroke/css/helper.css" rel="stylesheet">
+
+    <!-- Theme CSS
+    ============================================ -->
+    <link href="css/themecss/so_searchpro.css" rel="stylesheet">
+    <link href="css/themecss/so_megamenu.css" rel="stylesheet">
+    <link href="css/themecss/so_advanced_search.css" rel="stylesheet">
+    <link href="css/themecss/so-listing-tabs.css" rel="stylesheet">
+    <link href="css/themecss/so-categories.css" rel="stylesheet">
+    <link href="css/themecss/so-newletter-popup.css" rel="stylesheet">
+    <link href="css/themecss/so-latest-blog.css" rel="stylesheet">
+
+    <link href="css/footer/footer5.css" rel="stylesheet">
+    <link href="css/footer/footer7.css" rel="stylesheet">
+
+    <link href="css/header/header5.css" rel="stylesheet">
+    <link id="color_scheme" href="css/home5.css" rel="stylesheet">
+    <link id="color_scheme" href="css/home7.css" rel="stylesheet">
+
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- Google web fonts
+    ============================================ -->
+    <link href='https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,600,700' rel='stylesheet'
+        type='text/css'>
+    <style type="text/css">
+        body {
+            font-family: 'Rubik', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .typeheader-5 .container-megamenu.horizontal ul.megamenu>li.with-sub-menu>a::after {
+            color: black;
+        }
+
+        .container-megamenu.horizontal ul.megamenu>li>a {
+            color: white;
+        }
+
+        .typefooter-8 .socials li a:hover,
+        .typefooter-7 .socials li a:hover,
+        .typefooter-8 .row-dark,
+        .typefooter-7 .row-dark {
+            background-color: black;
+        }
+
+        .block-services .icon-service .icon i,
+        .typeheader-5 .telephone i,
+        .typeheader-5 .top-log i,
+        .typeheader-5 .top-log li a:hover,
+        .typeheader-5 ul.top-link>li .btn-group .btn-link:hover,
+        .typeheader-5 ul.top-link>li>a:hover,
+        .common-home .typeheader-5 .container-megamenu.horizontal ul.megamenu>li.home>a,
+        .typeheader-5 .search-header-w .ico-search,
+        .typeheader-5 .container-megamenu.horizontal ul.megamenu>li:hover>a,
+        .typeheader-5 .container-megamenu.horizontal ul.megamenu>li>a:hover,
+        .layout-5.common-home #content .module .pre_text {}
+
+        .typeheader-5 .shopping_cart,
+        .typeheader-5 #sosearchpro .search button,
+        .layout-5.common-home #content .so_advanced_search .sas_inner-box-search .search-button button,
+        .custom-cates .item .lnk a {}
+
+        .typefooter-5 .box-footer .modcontent ul.menu li a,
+        .typefooter-5 .box-infos {
+            color: white !important;
+        }
+
+        .slider-brands {
+            padding-top: 20px;
+        }
+
+        .text-shopping-cart {
+            color: white;
+        }
+
+        .icon-c {
+            font-size: 30px;
+            color: white;
+            text-align: center;
+        }
+
+        .shopcart {
+            text-align: center;
+        }
+
+        .row-brands {
+            padding: 0px 0px;
+        }
+
+        .row-banners {
+            margin-bottom: -9px;
+        }
+
+        .home7-video .box-video {
+            height: 420px;
+            width: 100%;
+        }
+
+        .slider-brands .contentslider .item {
+            padding: 0px 0px;
+        }
+
+        p {
+            margin-right: -50px
+        }
+
+        @media only screen and (max-width: 800px) {
+            #portal {
+                padding: 0px 0px;
+
+            }
+
+            .home7-video .box-video {
+                margin-left: 0%;
+            }
+
+            p {
+                margin-right: 0px
+            }
+
+            .slider-container {
+                display: none;
+            }
+        }
+
+        .megamenu-style-dev .navbar-default .horizontal .navbar-toggle .icon-bar {
+            background: white;
+            width: 30px;
+            height: 3px;
+        }
+
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 100vw;
+            position: relative;
+            margin: auto;
+
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: 1
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 1
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .typefooter-5 .footer-bottom {
+            padding: 5px;
+        }
+
+        .typefooter-5 .footer-middle {
+            padding: 0px;
+            padding-top: 20px;
+        }
+
+        .typefooter-5 .box-infos .list-icon li {
+            margin-bottom: 14px;
+        }
+
+        .typefooter-5 .row-bottom {
+            padding: 15px 0;
+        }
+
+        .typefooter-5 .socials li a {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .typefooter-5 .row-bottom:before {
+            opacity: .8;
+        }
+
+        .typefooter-6 .row-bottom:before,
+        .typefooter-5 .row-bottom:before {
+            background-color: black;
+        }
+
+        /*.slider-brands .owl2-nav{*/
+        /*    display:none;*/
+        /*}*/
+        /* Slider */
+
+        .slick-slide {
+            margin: 0px 20px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+            /*height: 150px;*/
+        }
+
+        .slick-slider {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -khtml-user-select: none;
+            -ms-touch-action: pan-y;
+            touch-action: pan-y;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .slick-list {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        .slick-list:focus {
+            outline: none;
+        }
+
+        .slick-list.dragging {
+            cursor: pointer;
+            cursor: hand;
+        }
+
+        .slick-slider .slick-track,
+        .slick-slider .slick-list {
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+        .slick-track {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+        }
+
+        .slick-track:before,
+        .slick-track:after {
+            display: table;
+            content: '';
+        }
+
+        .slick-track:after {
+            clear: both;
+        }
+
+        .slick-loading .slick-track {
+            visibility: hidden;
+        }
+
+        .slick-slide {
+            display: none;
+            float: left;
+            height: 100%;
+            min-height: 1px;
+        }
+
+        [dir='rtl'] .slick-slide {
+            float: right;
+        }
+
+        .slick-slide img {
+            display: block;
+        }
+
+        .slick-slide.slick-loading img {
+            display: none;
+        }
+
+        .slick-slide.dragging img {
+            pointer-events: none;
+        }
+
+        .slick-initialized .slick-slide {
+            display: block;
+        }
+
+        .slick-loading .slick-slide {
+            visibility: hidden;
+        }
+
+        .slick-vertical .slick-slide {
+            display: block;
+            height: auto;
+            border: 1px solid transparent;
+        }
+
+        .slick-arrow.slick-hidden {
+            display: none;
+        }
+
+        .footer_menu a:hover {
+            color: red !important;
+        }
+    </style>
+
+</head>
+
+<body class="common-home res layout-5">
+
+    <div id="wrapper" class="wrapper-fluid banners-effect-5">
+
+
+        <!-- Header Container  -->
+        <header id="header" class="typeheader-5" style="background-color:black;">
+
+            <!-- Header Top -->
+            <div class="header-top hidden-compact">
+                <div class="container">
+                    <div class="row">
+                        <div class="header-top-left col-lg-3 col-md-4 hidden-sm hidden-xs">
+                            <div class="telephone ">
+                                <i class="fa fa-phone"></i> Hotline: <a href="tel:+971551081965">+971 55 108 1965</a>
+                            </div>
+                        </div>
+                        <div class="header-top-right col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                            <ul class="top-link list-inline lang-curr">
+                                <!--<li class="currency">-->
+                                <!--    <div class="btn-group currencies-block">-->
+                                <!--        <form action="index.html" method="post" enctype="multipart/form-data" id="currency">-->
+                                <!--            <a class="btn btn-link dropdown-toggle" data-toggle="dropdown">-->
+                                <!--                <span class="icon icon-credit "></span> $ US Dollar  <span class="fa fa-angle-down"></span>-->
+                                <!--            </a>-->
+                                <!--            <ul class="dropdown-menu btn-xs">-->
+                                <!--                <li> <a href="#">(€)&nbsp;Euro</a></li>-->
+                                <!--                <li> <a href="#">(£)&nbsp;Pounds    </a></li>-->
+                                <!--                <li> <a href="#">($)&nbsp;US Dollar </a></li>-->
+                                <!--            </ul>-->
+                                <!--        </form>-->
+                                <!--    </div>-->
+                                <!--</li>-->
+                                <li class="language">
+                                    <div class="btn-group languages-block ">
+                                        <form action="index.html" method="post" enctype="multipart/form-data"
+                                            id="bt-language">
+                                            <a class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+                                                <img src="image/catalog/flags/gb.png" alt="English" title="English">
+                                                <span class="eng">English</span>
+                                                <span class="fa fa-angle-down"></span>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#"><img class="image_flag" src="image/catalog/flags/gb.png"
+                                                            alt="English" title="English" /> English </a></li>
+                                                <li> <a href="#"> <img class="image_flag"
+                                                            src="image/catalog/flags/uae.jpg" alt="Arabic"
+                                                            title="Arabic" /> Arabic </a> </li>
+                                            </ul>
+                                        </form>
+                                    </div>
+
+                                </li>
+                            </ul>
+                            <ul class="top-log list-inline">
+                                <li><i class="fa fa-lock"></i><a href="#">Login</a> / </li>
+                                <li><a href="#">Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle hidden-compact">
+                <div class="container">
+                    <div class="row">
+                        <div class="logo-w col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="image/alarkan_logo.png" title="Your Store" alt="Your Store" style="margin-top: -22px;
+    margin-bottom: -20px;
+    width: 90%" />
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 middle-right">
+                            <div class="main-menu-w">
+                                <div class="responsive so-megamenu megamenu-style-dev">
+                                    <nav class="navbar-default">
+                                        <div class=" container-megamenu  horizontal open ">
+                                            <div class="navbar-header">
+                                                <button type="button" id="show-megamenu" data-toggle="collapse"
+                                                    class="navbar-toggle">
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>
+                                            </div>
+
+                                            <div class="megamenu-wrapper">
+                                                <span id="remove-megamenu" class="fa fa-times"></span>
+                                                <div class="megamenu-pattern">
+                                                    <div class="container-mega">
+                                                        <ul class="megamenu" data-transition="slide"
+                                                            data-animationtime="250">
+                                                            <li class="">
+                                                                <p class="close-menu"></p>
+                                                                <a href="#" class="clearfix">
+                                                                    <strong>Search</strong>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <p class="close-menu"></p>
+                                                                <a href="#" class="clearfix">
+                                                                    <strong>Cart</strong>
+
+                                                                </a>
+
+                                                            </li>
+
+                                                            <li class="">
+                                                                <p class="close-menu"></p>
+                                                                <a href="#" class="clearfix">
+                                                                    <strong>Orders</strong>
+
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="">
+                                                                <p class="close-menu"></p>
+                                                                <a href="#" class="clearfix">
+                                                                    <strong>Shipment</strong>
+
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="">
+                                                                <p class="close-menu"></p>
+                                                                <a href="#" class="clearfix">
+                                                                    <strong>Balance</strong>
+
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="">
+                                                                <p class="close-menu"></p>
+                                                                <a href="about.html" class="clearfix">
+                                                                    <strong>About Us</strong>
+
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="" style="float:right;">
+                                                                <p class="close-menu"></p>
+                                                                <a href="contact-us.html" class="clearfix">
+                                                                    <strong><i class="fa fa-phone"></i> Contact
+                                                                        Us</strong>
+
+                                                                </a>
+
+                                                            </li>
+                                                            <!--<li class="">-->
+                                                            <!--    <p class="close-menu"></p>-->
+                                                            <!--    <a href="blog-page.html" class="clearfix">-->
+                                                            <!--        <strong>Blog</strong>-->
+                                                            <!--        <span class="label"></span>-->
+                                                            <!--    </a>-->
+                                                            <!--</li>-->
+
+
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                            <!--<div class="search-header-w">-->
+                            <!--    <div class="ico-search"><i class="fa fa-search"></i></div>-->
+
+                            <!--    <div id="sosearchpro" class="sosearchpro-wrapper so-search ">-->
+                            <!--        <form method="GET" action="index.html">-->
+                            <!--            <div id="search0" class="search input-group form-group">-->
+                            <!--                <div class="select_category filter_type  icon-select hidden-sm hidden-xs">-->
+                            <!--                    <select class="no-border" name="category_id">-->
+                            <!--                        <option value="0">All Categories</option>-->
+                            <!--                        <option value="78">Apparel</option>-->
+                            <!--                        <option value="77">Cables &amp; Connectors</option>-->
+                            <!--                        <option value="82">Cameras &amp; Photo</option>-->
+                            <!--                        <option value="80">Flashlights &amp; Lamps</option>-->
+                            <!--                        <option value="81">Mobile Accessories</option>-->
+                            <!--                        <option value="79">Video Games</option>-->
+                            <!--                        <option value="20">Jewelry &amp; Watches</option>-->
+                            <!--                        <option value="76">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Earings</option>-->
+                            <!--                        <option value="26">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wedding Rings</option>-->
+                            <!--                        <option value="27">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Men Watches</option>-->
+                            <!--                    </select>-->
+                            <!--                </div>-->
+
+                            <!--                <input class="autosearch-input form-control" type="text" value="" size="50" autocomplete="off" placeholder="Keyword here..." name="search">-->
+
+                            <!--                <button type="submit" class="button-search btn btn-primary" name="submit_search"><i class="fa fa-search"></i></button>-->
+
+                            <!--            </div>-->
+                            <!--            <input type="hidden" name="route" value="product/search" />-->
+                            <!--        </form>-->
+                            <!--    </div>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                    <!--<div class="shopping_cart">-->
+                    <!--    <div id="cart" class="btn-shopping-cart">-->
+                    <!--<a href="javascript:void(0)" data-loading-text="Loading... " class="btn-group top_cart dropdown-toggle" data-toggle="dropdown" aria-expanded="true">-->
+                    <!--            <a href="contact-us.html">-->
+                    <!--            <div class="shopcart">-->
+                    <!--                <span class="icon-c">-->
+                    <!--<i class="fa fa-shopping-basket"></i>-->
+                    <!--                    <i class="fa fa-phone"></i>-->
+                    <!--                </span>-->
+                    <!--                <div class="shopcart-inner">-->
+                    <!--                    <p class="text-shopping-cart" style="margin-right: 0px;">-->
+                    <!--                        Contact Us-->
+                    <!--                    </p>-->
+
+                    <!--<span class="total-shopping-cart cart-total-full">-->
+                    <!--<span class="items_cart">02</span><span class="items_cart2"> item(s)</span><span class="items_carts">$162.00</span>-->
+                    <!--</span>-->
+                    <!--                </div>-->
+                    <!--            </div>-->
+                    <!--        </a>-->
+
+                    <!--        <ul class="dropdown-menu pull-right shoppingcart-box" role="menu">-->
+                    <!--            <li>-->
+                    <!--                <table class="table table-striped">-->
+                    <!--                    <tbody>-->
+                    <!--                        <tr>-->
+                    <!--                            <td class="text-center" style="width:70px">-->
+                    <!--                                <a href="product.html">-->
+                    <!--                                    <img src="image/catalog/demo/product/80/1.jpg" style="width:70px" alt="Yutculpa ullamcon" title="Yutculpa ullamco" class="preview">-->
+                    <!--                                </a>-->
+                    <!--                            </td>-->
+                    <!--                            <td class="text-left"> <a class="cart_product_name" href="product.html">Yutculpa ullamco</a>-->
+                    <!--                            </td>-->
+                    <!--                            <td class="text-center">x1</td>-->
+                    <!--                            <td class="text-center">$80.00</td>-->
+                    <!--                            <td class="text-right">-->
+                    <!--                                <a href="product.html" class="fa fa-edit"></a>-->
+                    <!--                            </td>-->
+                    <!--                            <td class="text-right">-->
+                    <!--                                <a onclick="cart.remove('2');" class="fa fa-times fa-delete"></a>-->
+                    <!--                            </td>-->
+                    <!--                        </tr>-->
+                    <!--                        <tr>-->
+                    <!--                            <td class="text-center" style="width:70px">-->
+                    <!--                                <a href="product.html">-->
+                    <!--                                    <img src="image/catalog/demo/product/80/2.jpg" style="width:70px" alt="Xancetta bresao" title="Xancetta bresao" class="preview">-->
+                    <!--                                </a>-->
+                    <!--                            </td>-->
+                    <!--                            <td class="text-left"> <a class="cart_product_name" href="product.html">Xancetta bresao</a>-->
+                    <!--                            </td>-->
+                    <!--                            <td class="text-center">x1</td>-->
+                    <!--                            <td class="text-center">$60.00</td>-->
+                    <!--                            <td class="text-right">-->
+                    <!--                                <a href="product.html" class="fa fa-edit"></a>-->
+                    <!--                            </td>-->
+                    <!--                            <td class="text-right">-->
+                    <!--                                <a onclick="cart.remove('1');" class="fa fa-times fa-delete"></a>-->
+                    <!--                            </td>-->
+                    <!--                        </tr>-->
+                    <!--                    </tbody>-->
+                    <!--                </table>-->
+                    <!--            </li>-->
+                    <!--            <li>-->
+                    <!--                <div>-->
+                    <!--                    <table class="table table-bordered">-->
+                    <!--                        <tbody>-->
+                    <!--                            <tr>-->
+                    <!--                                <td class="text-left"><strong>Sub-Total</strong>-->
+                    <!--                                </td>-->
+                    <!--                                <td class="text-right">$140.00</td>-->
+                    <!--                            </tr>-->
+                    <!--                            <tr>-->
+                    <!--                                <td class="text-left"><strong>Eco Tax (-2.00)</strong>-->
+                    <!--                                </td>-->
+                    <!--                                <td class="text-right">$2.00</td>-->
+                    <!--                            </tr>-->
+                    <!--                            <tr>-->
+                    <!--                                <td class="text-left"><strong>VAT (20%)</strong>-->
+                    <!--                                </td>-->
+                    <!--                                <td class="text-right">$20.00</td>-->
+                    <!--                            </tr>-->
+                    <!--                            <tr>-->
+                    <!--                                <td class="text-left"><strong>Total</strong>-->
+                    <!--                                </td>-->
+                    <!--                                <td class="text-right">$162.00</td>-->
+                    <!--                            </tr>-->
+                    <!--                        </tbody>-->
+                    <!--                    </table>-->
+                    <!--                    <p class="text-right"> <a class="btn view-cart" href="cart.html"><i class="fa fa-shopping-cart"></i>View Cart</a>&nbsp;&nbsp;&nbsp; <a class="btn btn-mega checkout-cart" href="checkout.html"><i class="fa fa-share"></i>Checkout</a>-->
+                    <!--                    </p>-->
+                    <!--                </div>-->
+                    <!--            </li>-->
+                    <!--        </ul>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                </div>
+
+            </div>
+
+        </header>
+        <!-- //Header Container  -->
+
+
+        <!-- Main Container  -->
+        <div class="main-container">
+            <div id="content">
+                <!--<div class="slider-container">-->
+                <!--    <div class="module sohomepage-slider ">-->
+                <!--        <div class="yt-content-slider"  data-rtl="yes" data-autoplay="no" data-autoheight="no" data-delay="4" data-speed="0.6" data-margin="0" data-items_column00="1" data-items_column0="1" data-items_column1="1" data-items_column2="1"  data-items_column3="1" data-items_column4="1" data-arrows="yes" data-pagination="no" data-lazyload="yes" data-loop="no" data-hoverpause="yes">-->
+                <!--            <div class="yt-content-slide">-->
+                <!--                <a href="#"><img width="100%" height="600" src="image/slider05.jpg" alt="image" class="img-responsive"/></a>-->
+                <!--            </div>-->
+                <!--            <div class="yt-content-slide">-->
+                <!--                <a href="#"><img width="100%" height="600" src="image/slider02.jpg" alt="image" class="img-responsive" /></a>-->
+                <!--            </div>-->
+                <!--            <div class="yt-content-slide">-->
+                <!--                <a href="#"><img width="100%" height="600" src="image/slider01.jpg" alt="image" class="img-responsive"/></a>-->
+                <!--            </div>-->
+                <!-- <div class="yt-content-slide">-->
+                <!--                <a href="#">-->
+                <!--                  <video width="1920" height="720" controls autoplay class="img-responsive">-->
+                <!--                    <source src="image/30629898.mp4" type="video/mp4">-->
+                <!--                    Your browser does not support the video tag.-->
+                <!--                  </video>                        </a>-->
+                <!--            </div> -->
+                <!--        </div>-->
+
+                <!--        <div class="loadeding"></div>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <!--<div class="numbertext">3 / 3</div>-->
+                        <img width="100%" height="650" src="image/Big choice of more than 60 OEM brands (1).png"
+                            alt="image">
+                        <!--<div class="text">Caption Three</div>-->
+                    </div>
+
+                    <div class="mySlides fade">
+                        <!--<div class="numbertext">1 / 3</div>-->
+                        <img width="100%" height="650" src="image/Al Arkan Website Banner Images.png" alt="image">
+                        <!--<div class="text">Caption Text</div>-->
+                    </div>
+
+                    <div class="mySlides fade">
+                        <!--<div class="numbertext">2 / 3</div>-->
+                        <img width="100%" height="650" src="image/spareparts2.png" alt="image">
+                        <!--<div class="text">Caption Two</div>-->
+                    </div>
+
+
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <!--<div style="text-align:center">-->
+                <!--  <span class="dot" onclick="currentSlide(1)"></span>-->
+                <!--  <span class="dot" onclick="currentSlide(2)"></span>-->
+                <!--  <span class="dot" onclick="currentSlide(3)"></span>-->
+                <!--</div>-->
+
+                <div class="content-main-w">
+                    <div class="container" style="padding-top: 10px; padding-bottom:10px;background: url(image/shutterstock_1012653256.jpg) no-repeat center;    
+background-size: cover;margin: 0px;width: 100vw;
+    padding: 50px 100px;margin-top: -4vh;">
+                        <div class="banners banners2">
+                            <div class="row">
+                                <div class="item col-lg-4 col-md-4 col-sm-4 col-xs-12"><br>
+                                    <h3 style="font-size: 36px;
+    color: #282828;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0px 0px;
+    display: inline-block;"><span>About Us</span></h3>
+                                    <p>Alarkan General Trading FZC (Dubai Free Zone company) is a leading name in the
+                                        Auto Spare parts world, with over 22 years of experience as a prominent
+                                        distributor and supplier of genuine auto spare parts and accessories.
+                                        <br>
+                                    <div style="height:2px"></div>
+                                    Internationally – the motor vehicle spare parts business has achieved an enormous
+                                    transformation. In UAE it began as a business to meet domestic requirement and
+                                    export to some of the African countries.
+                                    <br>
+                                    <div style="height:8px"></div>Today, Dubai Auto spare parts business has entirely
+                                    altered the universal marketing and calls as the hub for re-export business.
+                                    <br>
+                                    <div style="height:8px"></div>Alarkan General Trading FZE is one among the key
+                                    participant in this business boom and has got a long-lasting reputation and dignity
+                                    in this field.
+                                    </p>
+                                </div>
+                                <div class="item col-lg-8 col-md-8 col-sm-8 col-xs-12"><br><br>
+                                    <a class="home7-video" href="image/company_video.mp4">
+                                        <div class="box-video"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <!--                <div class="slider-brands container">-->
+                        <!--                     <div class="yt-content-slider contentslider" data-rtl="no" data-loop="yes" data-autoplay="no" data-autoheight="no" data-autowidth="no" data-delay="2" data-speed="0.2" data-margin="0" data-items_column00="6" data-items_column0="6" data-items_column1="5" data-items_column2="3" data-items_column3="2" data-items_column4="1" data-arrows="yes" data-pagination="no" data-lazyload="yes" data-hoverpause="yes">-->
+                        <!--                        <div class="item"><a href="#"><img src="image/brands1 (1).jpg" alt="brand"></a></div>-->
+                        <!--                        <div class="item"><a href="#"><img src="image/brands1 (2).jpg" alt="brand"></a></div>-->
+                        <!--                        <div class="item"><a href="#"><img src="image/brands1 (3).jpg" alt="brand"></a></div>-->
+                        <!--                        <div class="item"><a href="#"><img src="image/brands1 (4).jpg" alt="brand"></a></div>-->
+                        <!--                        <div class="item"><a href="#"><img src="image/brands1 (5).jpg" alt="brand"></a></div>-->
+                        <!--                        <div class="item"><a href="#"><img src="image/brands1 (6).jpg" alt="brand"></a></div>-->
+                        <!--                        <div class="item"><a href="#"><img src="image/brands1 (7).jpg" alt="brand"></a></div>-->
+                        <!--                        <div class="item"><a href="#"><img src="image/brands1 (8).jpg" alt="brand"></a></div>-->
+                        <!--                        <div class="item"><a href="#"><img src="image/brands1 (9).jpg" alt="brand"></a></div>-->
+
+                        <!--                    </div>-->
+                        <!--<br>-->
+
+                        <!--                </div>-->
+
+                        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+                        <br>
+                        <div class="container">
+                            <section class="customer-logos slider">
+                                <div class="slide"><img src="image/brands1 (1).jpg" alt="brand"></div>
+                                <div class="slide"><img src="image/brands1 (2).jpg" alt="brand"></div>
+                                <div class="slide"><img src="image/brands1 (3).jpg" alt="brand"></div>
+                                <div class="slide"><img src="image/brands1 (4).jpg" alt="brand"></div>
+                                <div class="slide"><img src="image/brands1 (5).jpg" alt="brand"></div>
+                                <div class="slide"><img src="image/brands1 (6).jpg" alt="brand"></div>
+                                <div class="slide"><img src="image/brands1 (7).jpg" alt="brand"></div>
+                                <div class="slide"><img src="image/brands1 (8).jpg" alt="brand"></div>
+                                <div class="slide"><img src="image/brands1 (9).jpg" alt="brand"></div>
+                                <div class="slide"><img src="image/suzuki.png" alt="brand"></div>
+                                <div class="slide"><img src="image/bmw.png" alt="brand"></div>
+                                <div class="slide"><img src="image/ford.png" alt="brand"></div>
+                                <div class="slide"><img src="image/mazda.png" alt="brand"></div>
+
+                            </section>
+                        </div>
+                    </div>
+                    <!--                <br><br><br>-->
+                    <!--                <div class="custom-cates" style="    margin-left: -100px;-->
+                    <!--    margin-right: -100px">-->
+                    <!--                    <div class="yt-content-slider contentslider" data-rtl="no" data-loop="yes" data-autoplay="no" data-autoheight="no" data-autowidth="no" data-delay="4" data-speed="0.6" data-margin="0" data-items_column00="4" data-items_column0="4" data-items_column1="3" data-items_column2="2" data-items_column3="2" data-items_column4="1" data-arrows="no" data-pagination="no" data-lazyload="yes" data-hoverpause="yes">-->
+                    <!--                        <div class="item">-->
+                    <!--                            <a href="#" class="img">-->
+                    <!--                                <img src="image/local/ca1.jpg" alt="banner">-->
+                    <!-- <video autoplay="autoplay" width="300" height="300" control>-->
+                    <!--                                  <source src="image/Car Engines.mp4" type="video/mp4">-->
+                    <!--                                </video> -->
+                    <!--                            </a>-->
+                    <!--                            <div class="cont">-->
+                    <!--                                <h2>Tyres</h2>-->
+                    <!--                                <span>184 products</span>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="lnk"><a href="#">Discover now</a></div>-->
+                    <!--                        </div>-->
+                    <!--                        <div class="item">-->
+                    <!--                            <a href="#" class="img">-->
+                    <!--                                <img src="image/local/ca2.jpg" alt="banner">-->
+                    <!--                            </a>-->
+                    <!--                            <div class="cont">-->
+                    <!--                                <h2>Light parts</h2>-->
+                    <!--                                <span>260 products</span>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="lnk"><a href="#">Discover now</a></div>-->
+                    <!--                        </div>-->
+                    <!--                        <div class="item">-->
+                    <!--                            <a href="#" class="img">-->
+                    <!--                                <img src="image/local/ca3.jpg" alt="banner">-->
+                    <!--                            </a>-->
+                    <!--                            <div class="cont">-->
+                    <!--                                <h2>Engine</h2>-->
+                    <!--                                <span>85 products</span>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="lnk"><a href="#">Discover now</a></div>-->
+                    <!--                        </div>-->
+                    <!--                        <div class="item">-->
+                    <!--                            <a href="#" class="img">-->
+                    <!--                                <img src="image/local/ca4.jpg" alt="banner">-->
+                    <!--                            </a>-->
+                    <!--                            <div class="cont">-->
+                    <!--                                <h2>Service Fluids</h2>-->
+                    <!--                                <span>105 products</span>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="lnk"><a href="#">Discover now</a></div>-->
+                    <!--                        </div>-->
+                    <!--                      </div>-->
+                    <!--                    </div>-->
+
+                    <!--        </div>-->
+
+
+                    <!--<div class="row-banners">-->
+                    <!--                <div class="banners banners1">-->
+                    <!--                    <div class="item item1">-->
+                    <!--                        <a href="#"><img src="image/1.jpg" alt="banner"></a>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="item item2">-->
+                    <!--                        <a href="#"><img src="image/2.jpg" alt="banner"></a>-->
+                    <!--                    </div>-->
+                    <!--                    <div class="item item3">-->
+                    <!--                        <a href="#"><img src="image/3.jpg" alt="banner"></a>-->
+                    <!--                    </div>-->
+                    <!--                </div>-->
+                </div>
+
+
+                <!--<div class="row-brands">-->
+                <!--                <div class="slider-brands container">-->
+                <!--                     <div class="yt-content-slider contentslider" data-rtl="no" data-loop="yes" data-autoplay="no" data-autoheight="no" data-autowidth="no" data-delay="2" data-speed="0.2" data-margin="0" data-items_column00="6" data-items_column0="6" data-items_column1="5" data-items_column2="3" data-items_column3="2" data-items_column4="1" data-arrows="yes" data-pagination="no" data-lazyload="yes" data-hoverpause="yes">-->
+                <!--                        <div class="item"><a href="#"><img src="image/brands1 (1).jpg" alt="brand"></a></div>-->
+                <!--                        <div class="item"><a href="#"><img src="image/brands1 (2).jpg" alt="brand"></a></div>-->
+                <!--                        <div class="item"><a href="#"><img src="image/brands1 (3).jpg" alt="brand"></a></div>-->
+                <!--                        <div class="item"><a href="#"><img src="image/brands1 (4).jpg" alt="brand"></a></div>-->
+                <!--                        <div class="item"><a href="#"><img src="image/brands1 (5).jpg" alt="brand"></a></div>-->
+                <!--                        <div class="item"><a href="#"><img src="image/brands1 (6).jpg" alt="brand"></a></div>-->
+                <!--                        <div class="item"><a href="#"><img src="image/brands1 (7).jpg" alt="brand"></a></div>-->
+                <!--                        <div class="item"><a href="#"><img src="image/brands1 (8).jpg" alt="brand"></a></div>-->
+                <!--                        <div class="item"><a href="#"><img src="image/brands1 (9).jpg" alt="brand"></a></div>-->
+
+                <!--                    </div>-->
+                <!--<br><br>-->
+
+                <!--                </div>-->
+                <!--</div>-->
+
+                <!--<div class="row-color">-->
+                <!--    <div class="block-services container">-->
+                <!--        <div class="row">-->
+                <!--            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-margin1">-->
+                <!--                <div class="icon-service">-->
+                <!--                    <div class="icon"><i class="pe-7s-car">&nbsp;</i></div>-->
+                <!--                    <div class="text">-->
+                <!--                        <h6>Free shipping</h6>-->
+                <!--                        <p class="no-margin">On all orders over $99.00</p>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <!--            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-margin1">-->
+                <!--                <div class="icon-service">-->
+                <!--                    <div class="icon"><i class="pe-7s-refresh-2">&nbsp;</i></div>-->
+                <!--                    <div class="text">-->
+                <!--                        <h6>30 days return</h6>-->
+                <!--                        <p class="no-margin">You have 30 days to return</p>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <!--            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-margin">-->
+                <!--                <div class="icon-service">-->
+                <!--                    <div class="icon"><i class="pe-7s-door-lock">&nbsp;</i></div>-->
+                <!--                    <div class="text">-->
+                <!--                        <h6>Safe Shopping<br></h6>-->
+                <!--                        <p class="no-margin">Payment 100% secure</p>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <!--            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">-->
+                <!--                <div class="icon-service">-->
+                <!--                    <div class="icon"><i class="pe-7s-users">&nbsp;</i></div>-->
+                <!--                    <div class="text">-->
+                <!--                        <h6>Online support</h6>-->
+                <!--                        <p class="no-margin">Contact us 24 hours a day</p>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--            </div>-->
+
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
+
+            </div>
+
+        </div>
+        <!-- //Main Container -->
+        <footer class="footer-container typefooter-5">
+            <!-- Footer middle Container -->
+            <div class="container">
+                <!--<div class="row footer-middle">-->
+                <!--    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-style">-->
+                <!--        <div class="box-footer box-infos">-->
+                <!--            <div class="module">-->
+                <!--                <h3 class="modtitle">Contact us</h3>-->
+                <!--                <div class="modcontent">-->
+                <!--                    <ul class="list-icon">-->
+                <!--                        <li><span class="icon pe-7s-map-marker"></span>Jebel Ali Freezone - Dubai<br> United Arab Emirates<br>P.o. Box: 25370</li>-->
+                <!--                        <li><span class="icon pe-7s-mail"></span><a href="mailto:: info@alarkangt.com" style="color:white;">info@alarkangt.com</a></li>-->
+                <!--                        <li><span class="icon pe-7s-phone"></span><a href="tel:+971551081965" style="color:white;">+971 55 108 1965</a></li>-->
+                <!--                        <li><span class="icon pe-7s-call"></span><a href="tel:+97148812272" style="color:white;">+971 4 88 122 72</a></li>-->
+                <!--                    </ul>-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-style">-->
+                <!--        <div class="row">-->
+                <!--            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-style">-->
+                <!--                <div class="box-information box-footer">-->
+                <!--                    <div class="module clearfix">-->
+                <!--                        <h3 class="modtitle">Information</h3>-->
+                <!--                        <div class="modcontent">-->
+                <!--                            <ul class="menu">-->
+                <!--                                <li><a href="index.html">Home</a></li>-->
+                <!--                                <li><a href="about.html">About Us</a></li>-->
+                <!--                                <li><a href="privacy.html">Privacy Policy</a></li>-->
+                <!--                                <li><a href="contact-us.html">Contact Us</a></li>-->
+
+                <!--                            </ul>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+
+                <!--            </div>-->
+                <!--            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-style">-->
+                <!--                <div class="box-account box-footer">-->
+                <!--                    <div class="module clearfix">-->
+                <!--                        <h3 class="modtitle">My Account</h3>-->
+                <!--                        <div class="modcontent">-->
+                <!--                            <ul class="menu">-->
+                <!--                                <li><a href="#">Login</a></li>-->
+                <!--                                <li><a href="#">Register</a></li>-->
+
+                <!--                            </ul>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <!--            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-clear">-->
+                <!--                <div class="box-service box-footer">-->
+                <!--                  <div class="module clearfix">-->
+                <!--                    <h3 class="modtitle">Language</h3>-->
+                <!--                    <div class="modcontent">-->
+                <!--                      <ul class="menu">-->
+                <!--                        <li><a href="#">English</a></li>-->
+                <!--                        <li><a href="#">Arabic</a></li>-->
+
+                <!--                      </ul>-->
+                <!--                    </div>-->
+                <!--                  </div>-->
+                <!--                </div>-->
+                <!--            </div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
+
+            </div>
+            <div class="row-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                            <ul class="footer_menu" style="display: flex;">
+                                <li style="padding: 10px;"><a style="color: white;" href="contact-us.html">Contact
+                                        Us</a></li>
+                                <li style="padding: 10px;"><a style="color: white;" href="index.html">Home</a></li>
+                                <li style="padding: 10px;"><a style="color: white;" href="about.html">About Us</a></li>
+                                <li style="padding: 10px;"><a style="color: white;" href="privacy.html">Privacy
+                                        Policy</a></li>
+                                <li style="padding: 10px;"><a style="color: white;" href="tel:+971551081965">+971 55 108
+                                        1965</a></li>
+
+                            </ul>
+                            <p class="footer_menu" style="color:white;font-size:12px;padding: 10px;margin:-5px;">© 2021
+                                Al Arkan General Trading FZE. All rights reserved. Designed by <a style="color:white;"
+                                    href="https://www.modiantweb.com/" target="_blank">Modiant Web</a></p>
+
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 col-socials">
+                            <div class="socials-w" style="padding-left:40px;">
+                                <h4 style="color:white;">Follow us by</h4>
+                                <ul class="socials">
+                                    <li class="facebook"><a href="https://www.facebook.com/AlArkanGT/?ref=pages_you_manage"
+                                            target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <!-- <li class="twitter"><a href="https://twitter.com/alarkandxb?lang=en"
+                                            target="_blank"><i class="fa fa-twitter"></i></a></li> -->
+                                    <li class="linkedin"><a
+                                            href="https://www.linkedin.com/company/al-arkan"
+                                            target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="instagram"><a href="https://www.instagram.com/alarkangt/"
+                                            target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--<div class="module newsletter-footer1">-->
+                        <!--    <div class="newsletter">-->
+                        <!--        <h3 class="modtitle">Sign Up for Newsletter</h3>-->
+                        <!--        <div class="block_content">-->
+                        <!--            <form method="post" id="signup" name="signup" class="form-group form-inline signup send-mail">-->
+                        <!--                <div class="form-group">-->
+                        <!--                    <div class="input-box">-->
+                        <!--                        <input type="email" placeholder="Your email address..." value="" class="form-control" id="txtemail" name="txtemail" size="55">-->
+                        <!--                    </div>-->
+                        <!--                    <div class="subcribe">-->
+                        <!--                        <button class="btn btn-primary btn-default font-title" type="submit" onclick="return subscribe_newsletter();" name="submit">-->
+                        <!--                            <span>Subscribe</span>-->
+                        <!--                        </button>-->
+                        <!--                    </div>-->
+                        <!--                </div>-->
+                        <!--            </form>-->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+            <!-- /Footer middle Container -->
+            <!-- Footer Bottom Container -->
+            <!--<div class="footer-bottom">-->
+            <!--    <div class="container">-->
+            <!--        <div class="row">-->
+            <!--            <div class="copyright col-lg-8 col-md-8 col-sm-12 col-xs-12">-->
+            <!--                <p style="color:black;">© 2021 Al Arkan General Trading FZE. All rights reserved. Designed by <a href="http://www.modiantweb.com/" target="_blank">Modiant Web</a></p>-->
+            <!--            </div>-->
+            <!--<div class="payment-w col-lg-4 col-md-4 col-sm-12 col-xs-12">-->
+            <!--    <img src="image/catalog/demo/payment/payment.png" alt="imgpayment">-->
+            <!--</div>-->
+            <!--        </div>-->
+            <!--    </div>-->
+            <!--</div>-->
+            <!-- /Footer Bottom Container -->
+
+
+            <!--Back To Top-->
+            <div class="back-to-top"><i class="fa fa-angle-up"></i></div>
+        </footer>
+        <!-- //end Footer Container -->
+
+    </div>
+
+
+    <!-- End Color Scheme
+============================================ -->
+    <script type="text/javascript">
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+
+        $(document).ready(function () {
+            $('.customer-logos').slick({
+                slidesToShow: 9,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                dots: false,
+                pauseOnHover: true,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 6
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }]
+            });
+        });
+    </script>
+
+
+    <!-- Include Libs & Plugins
+============================================ -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/slick-slider/slick.js"></script>
+    <script type="text/javascript" src="js/themejs/libs.js"></script>
+    <script type="text/javascript" src="js/unveil/jquery.unveil.js"></script>
+    <script type="text/javascript" src="js/countdown/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
+    <script type="text/javascript" src="js/datetimepicker/moment.js"></script>
+    <script type="text/javascript" src="js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/modernizr/modernizr-2.6.2.min.js"></script>
+    <script type="text/javascript" src="js/minicolors/jquery.miniColors.min.js"></script>
+
+    <script type="text/javascript" src="js/lightslider/lightslider.js"></script>
+
+    <!-- Theme files
+============================================ -->
+
+    <script type="text/javascript" src="js/themejs/application.js"></script>
+
+    <script type="text/javascript" src="js/themejs/homepage.js"></script>
+
+    <script type="text/javascript" src="js/themejs/toppanel.js"></script>
+    <script type="text/javascript" src="js/themejs/so_megamenu.js"></script>
+    <script type="text/javascript" src="js/themejs/addtocart.js"></script>
+
+    <!-- <script type="text/javascript" src="js/themejs/cpanel.js"></script> -->
+
+
+</body>
+
+</html>

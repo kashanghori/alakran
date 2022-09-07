@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      div.blockcenter {
+        height: 10em;
+        display: flex;
+        justify-content: center
+    }
+    </style>
+  </head>
+  <body>
+  <div style="width: 100%; overflow:auto;">
+    <div style="float:left; width: 80%;">
+      <video width="640" height="480" controls>
+          <source src="./manOffers.webm" type="video/webm">
+          Your browser does not support the video tag.
+      </video>
+    </div>
+
+      <div style="float:left; color:grey">
+                <br/>
+          <p>On the <b>OFFERS</b> page you can download files, containing our offers, separated by lead time
+          </p>
+          <p>For your convenience, we have two kinds of offer files:
+              <ul>
+              <li>FULL files, containing items of all brands available in meaning lead time
+              <li>BRAND files, containing only items of appropriate brand in meaning lead time
+              </ul>
+          </p>
+
+          <p>All files have the same structure as follows:
+              <ul>
+              <li>BRAND  - unique code of the manufacturer in our system (* presents only in FULL files)</li>
+              <li>PARTNUMBER - manufacturer's unique item number </li>
+              <li>PRICE (USD) - price in USD from our warehouse, without further delivery (1USD =3.65 AED)</li>
+              <li>CATALOG - unique logo of the supplier</li>
+              <li>RATING - supply quality statistics</li>
+              <li>QUANTITY – available quantity (is empty for "by order" items)</li>
+              <li>WEIGHT - physical weight of the item in KG</li>
+              <li>VOLUME - Volume weight of the item in KG</li>
+              </ul>
+              Each file also contains Delivery costs in appropriate columns:
+              <ul>
+              <li>EKBA (Ekaterinburg, RUSSIA)</li>
+              <li>KIVA (Kiev, UKRAINE)</li>
+              <li>MSKA (Moscow, RUSSIA)</li>
+              </ul>
+          </p>
+
+          <p>To calculate your final price at the particular destination, you need to add the delivery cost to the PRICE (USD)
+            <br/>
+            <i>
+              *if you have any special <b>discount</b>, please note, that discount <b>applies only for PRICE (USD)</b> and doesn’t apply for the delivery cost
+            </i>
+          </p>
+
+          <p>There is an option also to download the offer files from our ftp-server. You need to contact our managers to get the access
+          </p>
+      </div>
+  </div>
+
+  </body>
+</html>
