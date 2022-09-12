@@ -7,7 +7,11 @@ import {
 } from "react-router-dom";
 import {
   EmailVerifiedPage,
-  LandingPage, ResetPasswordPage, BankPage, CatalogPage
+  LandingPage,
+  ResetPasswordPage,
+  BankPage,
+  CatalogPage,
+  ImportModulePage
 } from "./pages";
 import AboutUsPage from "./pages/AboutUsPage";
 import ContactUsPage from "./pages/ContactUsPage";
@@ -15,7 +19,6 @@ import PrivacyPage from "./pages/PrivacyPage";
 import SearchedPage from "./pages/SearchedPage";
 
 function AppRouter() {
-
   return (
     <Router>
       <Switch>
@@ -23,7 +26,7 @@ function AppRouter() {
           exact
           path="/"
           render={() => {
-            return <Redirect to="/app" />
+            return <Redirect to="/app" />;
           }}
         />
         <Route path="/app" component={LandingPage} />
@@ -35,6 +38,7 @@ function AppRouter() {
         <Route path="/email-verified" component={EmailVerifiedPage} />
         <Route path="/bank" component={BankPage} />
         <Route path="/offers" component={CatalogPage} />
+        <Route path="/import-module" component={ImportModulePage} />
       </Switch>
     </Router>
   );

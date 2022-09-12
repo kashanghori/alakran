@@ -155,3 +155,31 @@ header .dropdown-menu {
 body {
   background-color: #333333 !important;
 }
+
+.file-form {
+  display: grid;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.file-form .text-field {
+  width: 330px;
+}
+
+.import-file-container {
+  height: 53vh;
+  background-color: #d5d5d5;
+}
+
+.login-container {
+  height: 53vh;
+  background-color: #d5d5d5;
+  display: flex;
+  justify-content: center;
+}
+
+.template-button {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+}

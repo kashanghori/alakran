@@ -7,7 +7,8 @@ import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 import { getCookie, eraseCookie } from "../utils/cookies";
 
-const HeaderNav = () => {
+const HeaderNav = props => {
+  const { isAdmin } = props;
   const { t } = useTranslation();
   const pathname = window.location.pathname;
   const [isSignUpDialogOpen, setSignUpDialogOpen] = useState(false);
@@ -372,7 +373,9 @@ const HeaderNav = () => {
                                   </strong>
                                 </a>
                               </li>
-                              {!isLoggedIn ? (
+                              {isAdmin ? (
+                                ""
+                              ) : !isLoggedIn ? (
                                 <>
                                   <li className style={{ float: "right" }}>
                                     <p className="close-menu" />
@@ -406,6 +409,7 @@ const HeaderNav = () => {
                                   </a>
                                 </li>
                               )}
+
                               <li
                                 className="language"
                                 style={{

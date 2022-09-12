@@ -11,3 +11,4 @@ export { default as LandingPage } from "./LandingPage";
 export { default as CatalogPage } from "./CatalogPage";
 export { default as BankPage } from "./BankPage";
 export { default as ManualsPage } from "./ManualsPage";
+export { default as ImportModulePage } from "./ImportModule";
