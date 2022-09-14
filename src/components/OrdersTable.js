@@ -21,6 +21,7 @@ const OrdersTables = ({ classes, data }) => {
   const currency = data.length ? data[0].currency : "";
   return (
     <Table className={classes.table}>
+      <h1>Orders Table</h1>
       <TableHead>
         <TableRow>
           <TableCell>{t("order")}</TableCell>

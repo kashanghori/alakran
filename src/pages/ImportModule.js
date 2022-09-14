@@ -125,18 +125,10 @@ const LandingPage = ({ classes }) => {
             <div className="content-main-w" id="logovalue">
               {isLoggedIn ? (
                 <div className="import-file-container">
-                  <div className="template-button">
-                    <Button
-                      className={classes.rightButton}
-                      variant="contained"
-                      component="a"
-                      href="/quote_template.xlsx"
-                      download
-                    >
-                      {t("template")}
-                    </Button>
-                  </div>
                   <form className={"file-form"} noValidate autoComplete="off">
+                    <Typography className={classes.loginText}>
+                      Upload your Listing File Here
+                    </Typography>
                     <TextField
                       id="outlined-name"
                       label="Label"
@@ -170,6 +162,15 @@ const LandingPage = ({ classes }) => {
                       accept=".xlsx"
                       onChange={handleFileUpload}
                     />
+                    <Button
+                      className={classes.rightButton}
+                      variant="contained"
+                      component="a"
+                      href="/quote_template.xlsx"
+                      download
+                    >
+                      {t("template")}
+                    </Button>
                   </form>
                 </div>
               ) : (
@@ -182,7 +183,11 @@ const LandingPage = ({ classes }) => {
                                         label={error}
                                     />
                                 )} */}
-                  <form className="login-form">
+
+                  <form className={classes.LoginForm}>
+                    <Typography className={classes.loginText}>
+                      Please Login to Continue
+                    </Typography>
                     <TextField
                       name="email"
                       type="email"
@@ -207,22 +212,7 @@ const LandingPage = ({ classes }) => {
                       value={credentials.password}
                       onChange={handleFieldChange}
                     />
-                    <Typography
-                      component="a"
-                      className={classes.forgotPassword}
-                      variant="caption"
-                      onClick={handlePasswordReset}
-                    >
-                      {t("forgot_password")}
-                    </Typography>
-                    {isPasswordReset && (
-                      <Typography
-                        className={classes.forgotPasswordMsg}
-                        variant="caption"
-                      >
-                        {t("reset_link_sent")}
-                      </Typography>
-                    )}
+
                     <Button
                       className={classes.button}
                       classes={{
@@ -411,7 +401,9 @@ const styles = theme => {
     leftButton: {
       marginLeft: theme.spacing.unit
     },
-    rightButton: {},
+    rightButton: {
+      marginTop: "20px  "
+    },
     whiteControl: {
       "& .MuiOutlinedInput-notchedOutline": {
         borderColor: "white"
@@ -429,6 +421,12 @@ const styles = theme => {
     },
     warnLabel: {
       color: "black"
+    },
+    loginText: {
+      fontSize: 22
+    },
+    LoginForm: {
+      marginTop: 10
     }
   };
 };
