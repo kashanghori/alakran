@@ -78,6 +78,7 @@ const LandingPage = ({ classes }) => {
         setToken(data.id);
         setCookie("access_token", data.id, 2);
         setIsLoggedIn(!isLoggedIn);
+        window.location.reload();
       }
       console.log(data);
       setLoginDialogOpen(false);
@@ -114,7 +115,7 @@ const LandingPage = ({ classes }) => {
       setTimeout(() => {
         setMessage(null);
         setValues({ ...values, ["file"]: "" });
-      }, 1000);
+      }, 5000);
     } else {
       setFileSuccess(false);
     }
@@ -186,7 +187,7 @@ const LandingPage = ({ classes }) => {
                       href="/quote_template_new.csv"
                       download
                     >
-                      {t("template")}
+                      {t("download Sample File")}
                     </Button>
                   </form>
                   {/* {fileSuccess ? <Typography style={{ color: "green" }}>File Uploaded Successfully</Typography> : " "} */}
