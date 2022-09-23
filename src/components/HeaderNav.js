@@ -88,7 +88,7 @@ const HeaderNav = props => {
       await userApi.login(email, password);
       setLoginDialogOpen(false);
       setSubmitting(false);
-      window.location.reload();
+      // window.location.reload();
     } catch (error) {
       setLoginError(error.message);
       setSubmitting(false);
@@ -110,7 +110,7 @@ const HeaderNav = props => {
       await userApi.signUp(user);
       setSignUpDialogOpen(false);
       setSubmitting(false);
-      window.location.reload();
+      // window.location.reload();
     } catch (error) {
       setSignUpError(error);
       setSubmitting(false);
@@ -124,7 +124,7 @@ const HeaderNav = props => {
     } catch (error) {
       // empty
     }
-    window.location.reload();
+    // window.location.reload();
   }
 
   const languageSelector = code => {

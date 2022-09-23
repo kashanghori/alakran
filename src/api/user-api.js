@@ -31,7 +31,8 @@ export const signUp = async user => {
 
 export const login = async (email, password) => {
   try {
-    await http.post("/users/login", { email, password });
+    const resp = await http.post("/users/login", { email, password });
+    return resp.data;
     //setCookie("access_token", "test");
   } catch (err) {
     if (err.response) {

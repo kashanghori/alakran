@@ -9,11 +9,14 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { withStyles } from "@material-ui/core/styles";
 import MenuItem from "@material-ui/core/MenuItem";
+import Chip from "@material-ui/core/Chip";
 import TextField from "@material-ui/core/TextField";
 import { Button } from "@material-ui/core";
-
+import { getCookie, setCookie } from "../utils/cookies";
 import { Typography } from "@material-ui/core";
-
+import { importFile } from "../api/balance-api";
+import ErrorIcon from "@material-ui/icons/Error";
+import DoneIcon from "@material-ui/icons/Done";
 const LandingPage = ({ classes }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isSignUpDialogOpen, setSignUpDialogOpen] = useState(false);
@@ -23,6 +26,9 @@ const LandingPage = ({ classes }) => {
   const [passResetError, setPassResetError] = useState("");
   const [isPasswordReset, setPasswordReset] = useState(false);
   const [isLoginDialogOpen, setLoginDialogOpen] = useState(false);
+  const [message, setMessage] = useState("");
+  const [fileSuccess, setFileSuccess] = useState(null);
+  const [token, setToken] = useState(null);
   const [values, setValues] = React.useState({
     label: "",
     age: "",
@@ -62,18 +68,24 @@ const LandingPage = ({ classes }) => {
     setCredentials({ ...credentials, [target.name]: target.value });
   }
 
-  async function handleLogin(email, password) {
-    console.log("asdasd");
-    setIsLoggedIn(!isLoggedIn);
-    // try {
-    //     setSubmitting(true);
-    //     await userApi.login(email, password);
-    //     setLoginDialogOpen(false);
-    //     setSubmitting(false);
-    // } catch (error) {
-    //     setLoginError(error.message);
-    //     setSubmitting(false);
-    // }
+  const handleImportFile = () => {};
+  async function handleLogin() {
+    // setIsLoggedIn(!isLoggedIn);
+    try {
+      setSubmitting(true);
+      const data = await userApi.login(credentials.email, credentials.password);
+      if (data.isAdmin === 1) {
+        setToken(data.id);
+        setCookie("access_token", data.id, 2);
+        setIsLoggedIn(!isLoggedIn);
+      }
+      console.log(data);
+      setLoginDialogOpen(false);
+      setSubmitting(false);
+    } catch (error) {
+      setLoginError(error.message);
+      setSubmitting(false);
+    }
   }
 
   async function handlePasswordReset(email) {
@@ -85,27 +97,27 @@ const LandingPage = ({ classes }) => {
     }
   }
 
-  async function handleSignUp(user) {
-    try {
-      setSubmitting(true);
-      await userApi.signUp(user);
-      setSignUpDialogOpen(false);
-      setSubmitting(false);
-    } catch (error) {
-      setSignUpError(error);
-      setSubmitting(false);
-    }
-  }
   const handleChange = name => event => {
-    console.log(event.target.value);
     setValues({ ...values, [name]: event.target.value });
   };
-  const handleFileUpload = e => {
+  const handleFileUpload = async e => {
     setFileUploading(true);
     setProgress(true);
     const file = e.target.files[0];
     setValues({ ...values, ["file"]: file.name });
-    console.log(file);
+    let data = new FormData();
+    data.append("importFile", file);
+    const resp = await importFile(data, token);
+    if (resp.status === 204) {
+      setFileSuccess(true);
+      setMessage("File Uploaded Successfully");
+      setTimeout(() => {
+        setMessage(null);
+        setValues({ ...values, ["file"]: "" });
+      }, 1000);
+    } else {
+      setFileSuccess(false);
+    }
     setFileUploading(false);
   };
   function handleFileOpen() {
@@ -113,8 +125,13 @@ const LandingPage = ({ classes }) => {
   }
 
   useEffect(() => {
-    handleLoginDialogOpen();
-  }, []);
+    if (getCookie("access_token")) {
+      setToken(getCookie("access_token"));
+      setIsLoggedIn(!isLoggedIn);
+    } else {
+      handleLoginDialogOpen();
+    }
+  }, [getCookie("access_token")]);
 
   return (
     <>
@@ -126,18 +143,18 @@ const LandingPage = ({ classes }) => {
               {isLoggedIn ? (
                 <div className="import-file-container">
                   <form className={"file-form"} noValidate autoComplete="off">
+                    {!!message && (
+                      <Chip
+                        className={classes.errorChip}
+                        color="primary"
+                        icon={<DoneIcon />}
+                        label={message}
+                      />
+                    )}
                     <Typography className={classes.loginText}>
                       Upload your Listing File Here
                     </Typography>
-                    <TextField
-                      id="outlined-name"
-                      label="Label"
-                      className={"text-field"}
-                      value={values.label}
-                      onChange={handleChange("label")}
-                      margin="normal"
-                      variant="outlined"
-                    />
+
                     <TextField
                       id="outlined-name"
                       label="File"
@@ -159,19 +176,20 @@ const LandingPage = ({ classes }) => {
                       type="file"
                       hidden
                       style={{ height: 0, width: 0 }}
-                      accept=".xlsx"
+                      accept=".xlsx,.csv"
                       onChange={handleFileUpload}
                     />
                     <Button
                       className={classes.rightButton}
                       variant="contained"
                       component="a"
-                      href="/quote_template.xlsx"
+                      href="/quote_template_new.csv"
                       download
                     >
                       {t("template")}
                     </Button>
                   </form>
+                  {/* {fileSuccess ? <Typography style={{ color: "green" }}>File Uploaded Successfully</Typography> : " "} */}
                 </div>
               ) : (
                 <div className="login-container">
@@ -188,6 +206,7 @@ const LandingPage = ({ classes }) => {
                     <Typography className={classes.loginText}>
                       Please Login to Continue
                     </Typography>
+
                     <TextField
                       name="email"
                       type="email"

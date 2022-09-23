@@ -28,17 +28,14 @@ const OrdersPage = ({ classes }) => {
   const [filter, setFilter] = useState("");
   const [progress, setProgress] = useState(false);
 
-
   async function fetchData(query) {
     setProgress(true);
     try {
       const result = await orderApi.states(query);
       setData(result);
-    }
-    finally {
+    } finally {
       setProgress(false);
     }
-
   }
 
   useEffect(() => {
@@ -161,10 +158,10 @@ const OrdersPage = ({ classes }) => {
           {progress ? <Spinner /> : null};
         </div>
       ) : (
-      <div className={`${classes.tableContainer} search-table`}>
-        <OrdersTable data={data} />
-      </div>
-    )}
+        <div className={`${classes.tableContainer} search-table`}>
+          <OrdersTable data={data} />
+        </div>
+      )}
     </Page>
   );
 };
